@@ -8,4 +8,8 @@ let valami = document.createElement('div')
 valami.innerText = 'Hello 🤨'
 container.appendChild(valami)
 
-document.getElementById('de').innerHTML = pets
+for (const element of pets) {
+  let tdiv = document.createElement('div')
+  container.appendChild(tdiv)
+  tdiv.innerHTML = element
+}
