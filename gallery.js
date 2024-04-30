@@ -20,4 +20,7 @@ for (let i = 0; i < kepek.length; i++) {
   img.src = "img/" + kepek[i];
   img.width = "500";
   istentudja.appendChild(img);
+  img.addEventListener("click", function () {
+    DivIMG.src = this.src;
+  });
 }
